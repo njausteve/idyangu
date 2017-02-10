@@ -15,6 +15,11 @@
         target: '.navbar-fixed-top',
         offset: 51
     });
+  
+   //toggle login and create account
+    $('.createAccount').click(function(){
+      
+    });
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
@@ -60,5 +65,19 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
+  
+  
+  
+  
+  $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
 
 })(jQuery); // End of use strict
+
+
+
+
+
+
+

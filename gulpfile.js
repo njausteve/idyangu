@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var less = require('gulp-less');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
@@ -6,6 +7,12 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+
+// watch html, less & js files for changes  
+
+gulp.task('watch', function(){
+      gulp.watch(['*.html', 'less/*.less', 'js/creative.js', 'css/creative.css'], ['default'] )
+});
 
 // Set the banner content
 var banner = ['/*!\n',
