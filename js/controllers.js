@@ -1,10 +1,10 @@
 angular.module('idyangu.controllers', [])
 
-.controller('mainCtlr', ['$scope', 
+.controller('mainCtlr', ['$scope','isyangservice', 
                         
  function($scope) {
        
-         $scope.hello = "world";
+         $scope.me = "Services";
    
       }
 ])
