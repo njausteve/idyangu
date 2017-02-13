@@ -52,7 +52,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-init=" hello = 'world'">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
                     <li>
                         <a class="page-scroll" href="#about">{{hello}}</a>
@@ -86,11 +86,33 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Id yangu</h1>
                 <hr>
-                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                
+                 <div class="searchBar">
+                   <div class="searchBar-Inner">
+                       <div class="searchBar-itemType">
+                     
+                         <select name="document" class="hasCustomSelect">
+                              <option value="volvo">Passports</option>
+                            <option value="saab">Id</option>
+                            <option value="opel">DL</option>
+                            <option value="audi">Other</option>
+                         
+                         </select>
+                       </div> 
+                       <div class="searchBar-divider"></div>
+                      <div class="searchBar-number">
+                          <input type="text" data-validate= "required|documentType|min:3|max:15" name="documentType" placeholder = "Enter document number ..." value = "" autofocus = "">
+                     </div>
+                     <button class="searchBar-search" type="button" ><img width="18px" src="https://truecaller-website-public.s3-eu-west-1.amazonaws.com/img/search/blue-search-icon.png"></button>
+           
+                   </div>   <!-- end of  searchBar-Inner -->
+                 </div>    <!-- end of  searchBar -->
+                     <br>       
+                <p>We aim to return all lost ID's , Passports, Driving lisences and other lost personal documents to their respective owners. We care for your lost items. </p>
+            
             </div>
                
               <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+             
         </div>
     </header>
 

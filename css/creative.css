@@ -1,6 +1,6 @@
 /*!
- * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2017 Start Bootstrap
+ * Start Bootstrap - idyangu v3.3.7+1 (http://idyangu-njaustevedomino617668.codeanyapp.com/)
+ * Copyright 2013-2017 Stephen njau
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 html,
@@ -108,9 +108,11 @@ aside {
 .navbar-default #nav-login {
   float: left;
   margin-top: 13px;
+  outline: none;
 }
 .navbar-default #nav-login :focus {
   background-color: #2a9c52;
+  outline: none;
 }
 @media (min-width: 768px) {
   .navbar-default {
@@ -122,6 +124,7 @@ aside {
     margin-top: 9px;
     background-color: #2dbe60;
     color: #fff;
+    outline: none;
   }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -178,6 +181,54 @@ header .header-content {
   padding: 100px 15px 100px;
   width: 100%;
 }
+header .header-content .header-content-inner .searchBar {
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  font-size: 88%;
+  border-radius: 5x;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+header .header-content .header-content-inner .searchBar .searchBar-Inner {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+header .header-content .header-content-inner .searchBar .searchBar-Inner select {
+  border: none;
+  margin: 0 10px;
+  outline: none;
+  background: #fff;
+}
+header .header-content .header-content-inner .searchBar .searchBar-Inner .searchBar-itemType {
+  color: #999;
+}
+header .header-content .header-content-inner .searchBar .searchBar-Inner .searchBar-divider {
+  height: 30px;
+  width: 1px;
+  background: #2dbe60;
+}
+header .header-content .header-content-inner .searchBar .searchBar-Inner .searchBar-number {
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+header .header-content .header-content-inner .searchBar .searchBar-Inner .searchBar-number input {
+  color: #999;
+  border: 0;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+}
+header .header-content .header-content-inner .searchBar .searchBar-Inner .searchBar-search {
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 0 20px 0 10px;
+}
 header .header-content .header-content-inner h1 {
   font-weight: 700;
   text-transform: uppercase;
@@ -210,6 +261,30 @@ header .header-content .header-content-inner p {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+  }
+  header .header-content .header-content-inner .searchBar {
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0;
+    border-radius: 2px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+  }
+  header .header-content .header-content-inner .searchBar .searchBar-Inner select {
+    margin: 0 20px;
+    font-size: 16px;
+  }
+  header .header-content .header-content-inner .searchBar .searchBar-Inner .searchBar-number input {
+    font-size: 16px;
+    padding: 20px;
+    width: 100%;
+    outline: none;
+  }
+  header .header-content .header-content-inner .searchBar .searchBar-Inner .searchBar-search {
+    padding: 0 20px;
   }
   header .header-content .header-content-inner h1 {
     font-size: 50px;
@@ -439,12 +514,7 @@ button.btn.btn-close {
   background: #fff;
   border: 0.5px solid #999;
 }
-.form button:hover,
-.form button:active,
-.form button:focus {
-  background: #0f5428;
-}
-#login-modal .modal-dialog {
+#login-modal.modal-dialog {
   position: absolute;
   top: 10%;
   left: 5%;
@@ -473,7 +543,7 @@ p.message {
   box-sizing: border-box;
   font-size: 14px;
 }
-.form #create-btn {
+#create-btn {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
@@ -488,7 +558,7 @@ p.message {
   cursor: pointer;
   border-radius: 10px;
 }
-.form #login-btn {
+#login-btn {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
@@ -503,4 +573,3 @@ p.message {
   cursor: pointer;
   border-radius: 10px;
 }
-

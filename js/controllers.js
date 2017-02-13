@@ -4,7 +4,8 @@ angular.module('idyangu.controllers', [])
                         
  function($scope) {
        
-         $scope.me = "Services";
+         $scope.me = "passports";
+         $scope.hello = "About"; 
    
       }
 ])

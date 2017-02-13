@@ -18,7 +18,6 @@ hr {
     max-width: 50px;
 }
 
-
 hr.light {
     border-color: white;
 }
@@ -119,24 +118,26 @@ aside {
             }
         }
     }
-     #nav-login {
-               float:left; 
+   #nav-login {		
+               float:left; 		
                margin-top: 13px;
-               
-                }
-     #nav-login :focus {
-            
-                    background-color: #2a9c52;
-                 
-                }
-      
+		           outline: none;
+               		
+                }		
+   #nav-login :focus {		
+            		
+                    background-color: #2a9c52;		
+                 		outline: none;
+                }		
+     
     @media (min-width: 768px) {
-      #nav-login {
-               float:right; 
-               margin-top: 9px;
-               background-color: @theme-primary;
-               color: #fff;
-         
+      
+         #nav-login {		
+               float:right; 		
+               margin-top: 9px;		
+               background-color: @theme-primary;		
+               color: #fff;		
+         		   outline: none;
                 }
         background-color: transparent;
         border-color: fade(white, 30%);
@@ -178,6 +179,9 @@ aside {
 
 // Homepage Header
 
+
+ 
+
 header {
     position: relative;
     width: 100%;
@@ -187,12 +191,78 @@ header {
     background-image: url('../img/header.jpeg');
     text-align: center;
     color: white;
+ 
     .header-content {
         position: relative;
         text-align: center;
         padding: 100px 15px 100px;
         width: 100%;
+			
         .header-content-inner {
+              .searchBar {
+                        width: 100%;
+                        max-width: 590px;
+                        margin: 0 auto;
+                        background: #fff;
+                        overflow: hidden;
+                        position: relative;   
+								        font-size: 88%;
+                        border-radius: 5x;
+                        box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+							          background: #fff;
+								
+                
+                .searchBar-Inner{
+									    
+									      
+									       select{
+													     border:none;
+													     margin: 0 10px;
+													     outline: none;
+													     background : #fff;
+												 }
+									
+									        display: flex;
+                          align-items: center;
+                          height: 40px;
+									
+                       .searchBar-itemType{
+												 
+												   color :#999;
+									
+                       }
+							
+                       .searchBar-divider{
+                             height: 30px;
+                             width: 1px;
+                             background: #2dbe60;   
+                           }
+                       .searchBar-number{  
+												 
+                            -webkit-box-flex: 1;
+                              flex: 1;
+
+                              input{
+																  color :#999;
+                                  border: 0;
+                                  font-size: 14px;
+                                  padding: 10px;
+                                  width: 100%;
+                                  outline : none;
+
+                              }
+
+                              }
+									   .searchBar-search{
+																			 background: #fff;
+											                 border: none;
+											                 outline: none;
+											                 padding: 0 20px 0 10px;
+																	}
+                      
+                       }
+       
+                  }  
             h1 {
                 font-weight: 700;
                 text-transform: uppercase;
@@ -209,7 +279,6 @@ header {
                 font-size: 16px;
                 margin-bottom: 50px;
             }
-     
         }
     }
     @media (min-width: 768px) {
@@ -222,6 +291,47 @@ header {
             transform: translateY(-50%);
             padding: 0 50px;
             .header-content-inner {
+							         .searchBar {
+                        width: 100%;
+                        max-width: 590px;
+                        margin: 0 auto;
+                        background: #fff;
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 0;
+                        border-radius: 2px;
+                        box-shadow: 0 2px 1px rgba(0,0,0,0.1);
+                
+                .searchBar-Inner{
+									    
+									      
+									       select{
+													     margin: 0 20px; 
+													     font-size: 16px;
+												 }
+	
+                       .searchBar-number{  
+												 
+                        
+                              input{
+																 
+                                  font-size: 16px;
+                                  padding: 20px;
+                                  width: 100%;
+                                  outline : none;
+
+                              }
+
+                            }
+									   .searchBar-search{
+																			 padding : 0 20px;
+											 
+																	}
+                      
+                       }
+       
+                  }
+							
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
@@ -234,7 +344,6 @@ header {
                     margin-left: auto;
                     margin-right: auto;
                 }
-          
             }
         }
     }
@@ -382,64 +491,47 @@ body {
 }
 
 
-/* ------ login modal   ------- */
+	/* ------ login modal   ------- */		
+.modal-header {		
+      border-bottom: none !important;		
+   } 		
+.modal-footer{		
+      border-top : none !important;  		
+      text-align: center;		
+   }		
+button.btn.btn-close{		
+       		
+      background: #fff;		
+      border: 0.5px solid #999;		
+		
+   }		
+	
+#login-modal.modal-dialog{		
+          position: absolute;		
+          top: 10%;		
+          left: 5%;		
+          right: 5%; 		
+  		
+      }		
+ p.message {		
+       		
+          font-family: "Roboto", sans-serif;		
+          margin: 15px 0 0;		
+          color: #b3b3b3;		
+          font-size: 14px;		
+    		
+              } 		
+.form {		
+        .register-form {		
+                  display: none;		
 
+              }		
 
-
-.modal-header {
-      border-bottom: none !important;
-
-   } 
-
-.modal-footer{
-      border-top : none !important;  
-      text-align: center;
-   }
-
-button.btn.btn-close{
-       
-      background: #fff;
-      border: 0.5px solid #999;
-  
-  
-  
- 
-      
-   }
-
-.form button:hover,.form button:active,.form button:focus {
-  background: #0f5428;
-}
-
-#login-modal .modal-dialog{
-          position: absolute;
-          top: 10%;
-          left: 5%;
-          right: 5%; 
-  
-      }
-
- p.message {
-       
-          font-family: "Roboto", sans-serif;
-          margin: 15px 0 0;
-          color: #b3b3b3;
-          font-size: 14px;
-    
-              } 
-
-.form {
-  .register-form {
-            display: none;
- 
-        }
-  
-  .login-form{
-        text-align: center;
-     
-    }
-  
-  input {
+        .login-form{		
+              text-align: center;		
+                  }
+	
+	   input {
       font-family: "Roboto", sans-serif;
       outline: 0;
       background: #f2f2f2;
@@ -450,6 +542,14 @@ button.btn.btn-close{
       box-sizing: border-box;
       font-size: 14px;
         }
+	
+	
+	
+	
+	
+    }
+
+
    #create-btn {
                 font-family: "Roboto", sans-serif;
                 text-transform: uppercase;
@@ -481,9 +581,3 @@ button.btn.btn-close{
                 border-radius: 10px;
                }
   
-    }
-
-
-}
-
-

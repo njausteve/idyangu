@@ -17,8 +17,8 @@
     });
   
    //toggle login and create account
-    $('.createAccount').click(function(){
-      
+    $('#jtest').click(function(){
+       $(p).hide();
     });
 
     // Closes the Responsive Menu on Menu Item Click
