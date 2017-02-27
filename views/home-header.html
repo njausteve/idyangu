@@ -1,0 +1,35 @@
+
+  <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Id yangu</h1>
+                <hr>
+                 <div class="searchBar">
+                   <div class="searchBar-Inner">
+                       <div class="searchBar-itemType">
+                     
+                         <select name="document" class="hasCustomSelect" ng-model = "itemType">
+                              <option value="passport">Passports</option>
+                            <option value="Id">Id</option>
+                            <option value="Dl">DL</option>
+                            <option value="Other">Other</option>
+                         
+                         </select>
+                       </div> 
+                       <div class="searchBar-divider"></div>
+                      <div class="searchBar-number">
+                          <input ng-model ="itemId" type="text" data-validate= "required|documentType|min:3|max:15" name="documentType" placeholder = "Enter document number ..." value = "" autofocus = "">
+                     </div>
+                     <button  ng-click = "searchCall(itemId, itemType );" class="searchBar-search" type="button" ><img width="18px" src="https://truecaller-website-public.s3-eu-west-1.amazonaws.com/img/search/blue-search-icon.png"></button>
+           
+                   </div>   <!-- end of  searchBar-Inner -->
+                 </div>    <!-- end of  searchBar -->
+                     <br>       
+                <p>We aim to return all lost ID's , Passports, Driving lisences and other lost personal documents to their respective owners. We care for your lost items. </p>
+            
+            </div>
+               
+              <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+             
+        </div>
+    </header>
