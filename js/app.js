@@ -11,4 +11,4 @@
 
 // angular.module('idyangu', ['idyangu.controllers', 'id-yangu-routes', 'idyangu.directives', ' idyangu.services'])
 
-angular.module('idyangu', ['idyangu.controllers', ' idyangu.services'])
+angular.module('idyangu', ['idyangu.controllers', ' idyangu.services', 'idyangu.routes'])

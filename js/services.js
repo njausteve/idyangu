@@ -1,5 +1,5 @@
 angular.module(' idyangu.services', [])
-.factory('isyangservice', [ function(){
+.factory('idyangservice', [ function(){
     return 'a';
   
 }])

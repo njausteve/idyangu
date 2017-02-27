@@ -11,7 +11,7 @@ var pkg = require('./package.json');
 // watch html, less & js files for changes  
 
 gulp.task('watch', function(){
-      gulp.watch(['*.html', 'less/*.less', 'js/creative.js', 'css/creative.css'], ['default'] )
+      gulp.watch(['*.html', '**/*.html', 'less/*.less', 'js/creative.js', 'css/creative.css'], ['default'] )
 });
 
 // Set the banner content
