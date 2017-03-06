@@ -12,4 +12,4 @@
 
 // angular.module('idyangu', ['idyangu.controllers', 'id-yangu-routes', 'idyangu.directives', ' idyangu.services'])
 
-var app = angular.module('idyangu', ['ui.router', 'idyangu.controllers', ' idyangu.services', 'idyangu.routes'])
+var app = angular.module('idyangu', ['ui.router', 'idyangu.controllers', ' idyangu.services', 'idyangu.routes', 'idyangu.directives'])
