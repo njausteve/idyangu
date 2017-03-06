@@ -5,10 +5,11 @@
 // the 2nd parameter is an array of 'requires'
 // 'idyangu.services' is found in services.js
 // 'idyangu.controllers' is found in controllers.js
+// use OcLazy load to load modules on the fly
 
 
 
 
 // angular.module('idyangu', ['idyangu.controllers', 'id-yangu-routes', 'idyangu.directives', ' idyangu.services'])
 
-angular.module('idyangu', ['idyangu.controllers', ' idyangu.services', 'idyangu.routes'])
+var app = angular.module('idyangu', ['ui.router', 'idyangu.controllers', ' idyangu.services', 'idyangu.routes'])

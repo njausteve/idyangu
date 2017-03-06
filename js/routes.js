@@ -1,4 +1,4 @@
-angular.module('idyangu.routes', ['ui.router'])
+angular.module('idyangu.routes', [])
 
   .config( function($stateProvider, $urlRouterProvider) {
   

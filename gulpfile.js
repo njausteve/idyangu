@@ -67,6 +67,12 @@ gulp.task('copy', function() {
 
     gulp.src(['node_modules/magnific-popup/dist/*'])
         .pipe(gulp.dest('vendor/magnific-popup'))
+    
+    gulp.src(['node_modules/oclazyload/dist/*'])
+        .pipe(gulp.dest('vendor/oclazyload'))
+    
+    gulp.src(['node_modules/angular-ui-router/release/*.min.js'])
+        .pipe( gulp.dest('vendor/angular-ui-router'))
 
     gulp.src(['node_modules/scrollreveal/dist/*.js'])
         .pipe(gulp.dest('vendor/scrollreveal'))
